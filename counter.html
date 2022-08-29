@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script>
+        //1. 输入希望倒计时的秒数 2.获取输入倒计时时的毫秒数 3. 倒计时毫秒数+倒计时秒数*1000 = 目标毫秒数 4. 当now > 目标毫秒数， alert
+        var sec = Number(prompt('counter'));
+        var now1 = Date.now();
+        while (1) {
+            if (Date.now() > now1 + sec * 1000) {
+                alert('timesup');
+                console.log(((now1 + sec * 1000) - Date.now()) / 1000);
+
+                break;
+            }
+        }
+    </script>
+</head>
+
+<body>
+
+</body>
+
+</html>
